@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernandez Chiropractic — Family Chiropractic Care in Las Vegas, NV</title>
+<meta name="description" content="Gentle, family-focused chiropractic care in Las Vegas. Dr. Alexander Hernandez provides personalized care for back pain, neck pain, headaches, and auto accident recovery. Call (702) 478-6388.">
+<meta name="theme-color" content="#1a3a2a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green-900: #0f2a1b;
+  --green-800: #173d28;
+  --green-700: #1e5236;
+  --green-600: #277148;
+  --green-500: #2f8a58;
+  --green-400: #4ba776;
+  --green-100: #e6f4ec;
+  --green-50: #f2faf6;
+
+  --warm-900: #2c2520;
+  --warm-800: #3d332c;
+  --warm-700: #5c4f44;
+  --warm-600: #7a6c60;
+  --warm-500: #9a8d82;
+  --warm-400: #b5a99e;
+  --warm-300: #d1c9c1;
+  --warm-200: #e5dfda;
+  --warm-100: #f0ece8;
+  --warm-50: #f8f6f3;
+
+  --accent: #c47a34;
+  --accent-dark: #a86628;
+  --accent-light: #fdf4eb;
+
+  --white: #ffffff;
+  --text-primary: #1e1e1e;
+  --text-secondary: #4d4d4d;
+  --text-tertiary: #777;
+
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.03);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.04);
+
+  --max-width: 1120px;
+  --header-height: 72px;
+  --section-gap: 100px;
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-500);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--green-900);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 560px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.btn-primary {
+  background: var(--green-700);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(30,82,54,0.25), 0 1px 2px rgba(0,0,0,0.06);
+}
+.btn-primary:hover, .btn-primary:focus-visible {
+  background: var(--green-800);
+  box-shadow: 0 4px 16px rgba(30,82,54,0.3), 0 2px 4px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(30,82,54,0.2);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--green-800);
+  border: 1.5px solid var(--warm-200);
+  box-shadow: var(--shadow-xs);
+}
+.btn-secondary:hover, .btn-secondary:focus-visible {
+  border-color: var(--green-400);
+  color: var(--green-700);
+  background: var(--green-50);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-sm { padding: 11px 22px; font-size: 14px; }
+
+.btn svg { width: 17px; height: 17px; }
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: var(--header-height);
+}
+
+.header.scrolled {
+  border-bottom-color: var(--warm-100);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.04);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo-mark {
+  width: 38px;
+  height: 38px;
+  background: var(--green-700);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--green-900);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.logo-text span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-top: 1px;
+}
+
+.nav { display: flex; align-items: center; gap: 8px; }
+
+.nav-links { display: flex; gap: 4px; }
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s, background 0.2s;
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+}
+
+.nav-links a:hover, .nav-links a:focus-visible {
+  color: var(--green-700);
+  background: var(--green-50);
+}
+
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--warm-200);
+  margin: 0 8px;
+}
+
+.nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-800);
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  transition: background 0.2s;
+}
+
+.nav-phone:hover { background: var(--green-50); }
+
+.nav-phone svg { width: 15px; height: 15px; color: var(--green-500); }
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+}
+
+.mobile-toggle:hover { background: var(--warm-100); }
+.mobile-toggle svg { width: 22px; height: 22px; }
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white);
+  z-index: 99;
+  padding: 16px 24px 32px;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  overflow-y: auto;
+}
+
+.mobile-nav.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-nav a {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+}
+
+.mobile-nav a:hover { background: var(--warm-50); }
+
+.mobile-nav-divider {
+  height: 1px;
+  background: var(--warm-100);
+  margin: 8px 0;
+}
+
+.mobile-nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--green-700);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+}
+
+.mobile-nav-cta {
+  margin-top: 8px;
+  padding: 0 16px;
+}
+
+.mobile-nav-cta .btn { width: 100%; }
+
+/* ===== HERO ===== */
+.hero {
+  padding-top: calc(var(--header-height) + 56px);
+  padding-bottom: 72px;
+  background: var(--white);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-content { max-width: 560px; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--green-50);
+  color: var(--green-700);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px 7px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 28px;
+  border: 1px solid var(--green-100);
+}
+
+.hero-badge svg { width: 14px; height: 14px; color: var(--green-500); }
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--green-900);
+  margin-bottom: 22px;
+  letter-spacing: -0.015em;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--green-600);
+}
+
+.hero-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
+.hero-trust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid var(--warm-100);
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.hero-trust-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-trust-icon svg { width: 18px; height: 18px; color: var(--green-500); }
+
+.hero-trust-text {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-tertiary);
+  padding-top: 2px;
+}
+
+.hero-trust-text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1px;
+}
+
+/* Doctor Card */
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.doctor-card {
+  background: linear-gradient(160deg, var(--warm-50) 0%, var(--white) 100%);
+  border-radius: var(--radius-xl);
+  padding: 36px 28px 32px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--warm-200);
+  box-shadow: var(--shadow-lg);
+}
+
+.doctor-card-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green-600) 0%, var(--green-800) 100%);
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 34px;
+  box-shadow: 0 4px 16px rgba(30,82,54,0.2);
+}
+
+.doctor-card h3 {
+  font-family: var(--font-display);
+  font-size: 21px;
+  color: var(--green-900);
+  text-align: center;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.doctor-card .doctor-title {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.doctor-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doctor-card-detail {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 11px 14px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--warm-100);
+}
+
+.doctor-card-detail svg {
+  width: 15px;
+  height: 15px;
+  color: var(--green-500);
+  flex-shrink: 0;
+}
+
+.doctor-card-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green-700);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(30,82,54,0.2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.doctor-card-tag::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6eeaa7;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(110,234,167,0.3);
+}
+
+/* ===== WHY SECTION ===== */
+.why-section {
+  padding: var(--section-gap) 0;
+  background: var(--warm-50);
+  border-top: 1px solid var(--warm-100);
+  border-bottom: 1px solid var(--warm-100);
+}
+
+.why-header {
+  margin-bottom: 48px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px 24px 24px;
+  border: 1px solid var(--warm-100);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: var(--green-400);
+  border-radius: 0 0 2px 2px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.why-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--warm-200);
+}
+
+.why-card:hover::before { opacity: 1; }
+
+.why-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.why-card-icon svg { width: 20px; height: 20px; color: var(--green-600); }
+
+.why-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.why-card p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* ===== CONDITIONS ===== */
+.conditions-section {
+  padding: var(--section-gap) 0;
+  background: var(--white);
+}
+
+.conditions-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.conditions-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.condition-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 20px;
+  border-radius: var(--radius-md);
+  background: var(--warm-50);
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.condition-item:hover {
+  border-color: var(--green-100);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.condition-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.condition-icon svg { width: 18px; height: 18px; color: var(--green-600); }
+
+.condition-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
+}
+
+.condition-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.conditions-cta {
+  text-align: center;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--warm-100);
+}
+
+.conditions-cta p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.conditions-cta a {
+  color: var(--green-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--green-100);
+  transition: text-decoration-color 0.2s;
+}
+
+.conditions-cta a:hover { text-decoration-color: var(--green-500); }
+
+/* ===== ABOUT ===== */
+.about-section {
+  padding: var(--section-gap) 0;
+  background: var(--green-900);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.02);
+  pointer-events: none;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-photo-initials {
+  font-family: var(--font-display);
+  font-size: 80px;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+}
+
+.about-photo-label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-photo-label h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+
+.about-photo-label p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+
+.about-content .section-label { color: var(--green-400); }
+.about-content .section-title { color: var(--white); }
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 14px;
+}
+
+.about-quote {
+  margin: 28px 0;
+  padding: 20px 24px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--green-400);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.8);
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.about-highlight svg {
+  width: 16px;
+  height: 16px;
+  color: var(--green-400);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== PROCESS ===== */
+.process-section {
+  padding: var(--section-gap) 0;
+  background: var(--warm-50);
+  border-top: 1px solid var(--warm-100);
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.process-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+/* connector line on desktop */
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: calc(16.667% + 28px);
+  right: calc(16.667% + 28px);
+  height: 2px;
+  background: var(--warm-200);
+  z-index: 0;
+}
+
+.process-step {
+  text-align: center;
+  padding: 0 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green-700);
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  box-shadow: 0 2px 8px rgba(30,82,54,0.2), 0 0 0 4px var(--warm-50);
+  position: relative;
+}
+
+.process-step h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--green-900);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.process-step p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+  padding: var(--section-gap) 0;
+  background: var(--white);
+  border-top: 1px solid var(--warm-100);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-info .section-title { margin-bottom: 12px; }
+.contact-info .section-subtitle { margin-bottom: 32px; }
+
+.contact-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--warm-100);
+}
+
+.contact-detail:first-child { padding-top: 0; }
+.contact-detail:last-child { border-bottom: none; }
+
+.contact-detail-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-detail-icon svg { width: 17px; height: 17px; color: var(--green-600); }
+
+.contact-detail-text h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+}
+
+.contact-detail-text p, .contact-detail-text a {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.contact-detail-text a {
+  transition: color 0.15s;
+}
+.contact-detail-text a:hover { color: var(--green-700); }
+
+.contact-map {
+  margin-top: 24px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--warm-200);
+  height: 160px;
+  background: var(--warm-50);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Form Card */
+.contact-form-card {
+  background: var(--warm-50);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px 32px;
+  border: 1px solid var(--warm-200);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.contact-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 32px;
+  right: 32px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green-500), var(--green-400));
+  border-radius: 0 0 3px 3px;
+}
+
+.contact-form-card h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--green-900);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.contact-form-card > p {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  border: 1.5px solid var(--warm-200);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--text-primary);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--warm-400);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(47,138,88,0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23777' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-submit {
+  margin-top: 6px;
+}
+
+.form-submit .btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.form-note {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-top: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--green-900);
+  color: rgba(255,255,255,0.7);
+  padding: 64px 0 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand .logo-text { color: var(--white); }
+.footer-brand .logo-text span { color: rgba(255,255,255,0.4); }
+.footer-brand .logo-mark { background: var(--green-700); }
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 18px;
+  max-width: 300px;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  padding: 5px 0;
+  transition: color 0.15s;
+}
+
+.footer-col a:hover { color: var(--white); }
+
+.footer-col p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.4);
+  transition: color 0.15s, background 0.15s;
+}
+
+.footer-socials a:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+
+.footer-socials svg { width: 18px; height: 18px; }
+
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background: var(--white);
+  border-top: 1px solid var(--warm-200);
+  padding: 8px 12px;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.08);
+}
+
+.sticky-cta-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr;
+  gap: 6px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.sticky-cta-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px 4px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+}
+
+.sticky-cta-btn:hover { background: var(--warm-50); color: var(--text-primary); }
+
+.sticky-cta-btn svg { width: 20px; height: 20px; }
+
+.sticky-cta-btn.primary {
+  background: var(--green-700);
+  color: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 1px 4px rgba(30,82,54,0.2);
+}
+
+.sticky-cta-btn.primary:hover { background: var(--green-800); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-inner { gap: 40px; }
+  .about-highlights { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+    --section-gap: 72px;
+  }
+
+  .container { padding: 0 20px; }
+
+  .nav-links, .nav-phone, .nav-divider, .header .btn { display: none; }
+  .mobile-toggle { display: block; }
+  .mobile-nav { display: flex; }
+
+  .hero {
+    padding-top: calc(var(--header-height) + 36px);
+    padding-bottom: 48px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-visual {
+    order: -1;
+    justify-content: center;
+  }
+
+  .doctor-card {
+    max-width: 100%;
+    padding: 32px 24px 28px;
+  }
+
+  .hero-trust {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .hero-trust-item { gap: 10px; }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .why-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .why-card::before { display: none; }
+
+  .why-card-icon {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .conditions-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .condition-item { padding: 18px 16px; }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-photo { aspect-ratio: 16 / 10; }
+
+  .about-highlights { grid-template-columns: 1fr; gap: 8px; }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .process-steps::before { display: none; }
+
+  .process-step {
+    text-align: left;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 20px 16px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--warm-100);
+  }
+
+  .process-step .step-number {
+    margin: 0;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+    box-shadow: 0 2px 6px rgba(30,82,54,0.15);
+  }
+
+  .process-step-body { flex: 1; }
+  .process-step h3 { font-size: 17px; }
+  .process-step p { max-width: none; }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-form-card {
+    padding: 28px 22px 24px;
+  }
+
+  .contact-form-card::before {
+    left: 22px;
+    right: 22px;
+  }
+
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .sticky-cta { display: block; }
+
+  body { padding-bottom: 76px; }
+
+  .section-title {
+    font-size: clamp(26px, 7vw, 34px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 30px; }
+  .hero-description { font-size: 15px; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; text-align: center; }
+
+  .doctor-card-avatar {
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+  }
+
+  .doctor-card h3 { font-size: 19px; }
+  .about-photo-initials { font-size: 56px; }
+}
+
+/* ===== FOCUS ===== */
+:focus-visible {
+  outline: 2px solid var(--green-500);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ===== ANIMATIONS ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.55s cubic-bezier(0.23,1,0.32,1), transform 0.55s cubic-bezier(0.23,1,0.32,1);
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-in-delay-1 { transition-delay: 0.08s; }
+  .fade-in-delay-2 { transition-delay: 0.16s; }
+  .fade-in-delay-3 { transition-delay: 0.24s; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Hernandez Chiropractic — Home">
+        <div class="logo-mark">H</div>
+        <div class="logo-text">
+          Hernandez
+          <span>Chiropractic</span>
+        </div>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#new-patients">New Patients</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-divider"></div>
+        <a href="tel:7024786388" class="nav-phone" aria-label="Call (702) 478-6388">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (702) 478-6388
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Request Appointment</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#new-patients" onclick="closeMobileNav()">New Patients</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="tel:7024786388" class="mobile-nav-phone" onclick="closeMobileNav()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    (702) 478-6388
+  </a>
+  <div class="mobile-nav-cta">
+    <a href="#contact" class="btn btn-primary" onclick="closeMobileNav()">Request Appointment</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Las Vegas, NV — S. Rainbow Blvd
+        </div>
+
+        <h1>Gentle, Family-Focused <em>Chiropractic Care</em> in Las Vegas</h1>
+
+        <p class="hero-description">
+          Dr. Alexander Hernandez provides specific, gentle chiropractic adjustments for patients of all ages — from newborns to seniors. Whether you're dealing with back pain, neck pain, headaches, or recovering from an auto accident, we're here to help.
+        </p>
+
+        <div class="hero-cta">
+          <a href="tel:7024786388" class="btn btn-primary" id="hero-call-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-appt-btn">Request an Appointment</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="hero-trust-text">
+              <strong>All Ages Welcome</strong>
+              Newborns through seniors
+            </div>
+          </div>
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="hero-trust-text">
+              <strong>Gentle Technique</strong>
+              Safe &amp; specific adjustments
+            </div>
+          </div>
+          <div class="hero-trust-item">
+            <div class="hero-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="hero-trust-text">
+              <strong>Same-Week Availability</strong>
+              Mon–Thurs appointments
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in fade-in-delay-1">
+        <div class="doctor-card">
+          <div class="doctor-card-tag">Accepting New Patients</div>
+          <div class="doctor-card-avatar">AH</div>
+          <h3>Dr. Alexander Hernandez</h3>
+          <p class="doctor-title">Doctor of Chiropractic</p>
+          <div class="doctor-card-details">
+            <div class="doctor-card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              2829 S. Rainbow Blvd, Las Vegas
+            </div>
+            <div class="doctor-card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon–Thurs: 9am–1pm &amp; 3pm–6pm
+            </div>
+            <div class="doctor-card-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (702) 478-6388
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY SECTION ===== -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="why-header fade-in">
+      <p class="section-label">Why Patients Choose Us</p>
+      <h2 class="section-title">A Different Kind of Chiropractic Office</h2>
+      <p class="section-subtitle">We focus on what matters: an accurate assessment, a clear plan, and a gentle approach that works for your whole family.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div>
+          <h3>Gentle, Specific Care</h3>
+          <p>Dr. Hernandez uses a gentle technique that's safe for patients of all ages, from newborns to seniors.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3>True Family Practice</h3>
+          <p>We treat the whole family under one roof — kids, parents, and grandparents — so everyone gets the care they need.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <h3>No Guesswork</h3>
+          <p>When needed, digital X-rays help us see what's happening so your treatment plan is specific to you, not one-size-fits-all.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div>
+          <h3>Born &amp; Raised in Vegas</h3>
+          <p>Dr. Hernandez is a Las Vegas native, UNLV graduate, and opened his practice to serve the community that raised him.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONDITIONS ===== -->
+<section class="conditions-section" id="services">
+  <div class="container">
+    <div class="conditions-header fade-in">
+      <p class="section-label">Common Reasons People Visit</p>
+      <h2 class="section-title">How We Can Help</h2>
+      <p class="section-subtitle">Chiropractic care can address a range of musculoskeletal concerns. Here are some of the most common reasons patients come to see us.</p>
+    </div>
+
+    <div class="conditions-grid">
+      <div class="condition-item fade-in">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Back Pain &amp; Low Back Pain</h3>
+          <p>One of the most common reasons people seek chiropractic care. We'll assess your spine and develop a plan tailored to your situation.</p>
+        </div>
+      </div>
+
+      <div class="condition-item fade-in fade-in-delay-1">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/><path d="M8 14v.5a4 4 0 0 0 8 0V14"/><path d="M12 19v3"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Neck Pain &amp; Stiffness</h3>
+          <p>Desk work, phone use, and daily stress can all contribute to neck discomfort. Gentle adjustments may help improve range of motion.</p>
+        </div>
+      </div>
+
+      <div class="condition-item fade-in">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Headaches</h3>
+          <p>Many headaches are related to tension in the neck and upper back. Chiropractic care may help reduce frequency and intensity.</p>
+        </div>
+      </div>
+
+      <div class="condition-item fade-in fade-in-delay-1">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Auto Accident Recovery</h3>
+          <p>Even minor accidents can cause spinal misalignment. We provide thorough exams, X-rays when needed, and a non-invasive approach to recovery.</p>
+        </div>
+      </div>
+
+      <div class="condition-item fade-in">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Family Wellness &amp; Pediatric Care</h3>
+          <p>Our gentle technique is safe for children and infants. Many families bring their kids in for regular checkups alongside their own care.</p>
+        </div>
+      </div>
+
+      <div class="condition-item fade-in fade-in-delay-1">
+        <div class="condition-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+        </div>
+        <div class="condition-content">
+          <h3>Posture &amp; Daily Discomfort</h3>
+          <p>For those dealing with muscle tension, stiffness, or general discomfort from daily life. We also offer intersegmental traction as part of care.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="conditions-cta fade-in">
+      <p>Not sure if chiropractic is right for you?</p>
+      <a href="tel:7024786388">Call us at (702) 478-6388</a> — we'll help you figure out the next step.
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-photo fade-in">
+        <div class="about-photo-initials">AH</div>
+        <div class="about-photo-label">
+          <h4>Dr. Alexander Hernandez, D.C.</h4>
+          <p>Cleveland University – Kansas City</p>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <p class="section-label">Meet Your Doctor</p>
+        <h2 class="section-title">Dr. Alexander Hernandez</h2>
+
+        <p>
+          Dr. Hernandez is a Las Vegas native who grew up playing baseball at UNLV, where he earned his degree in Kinesiology. Throughout his athletic career, chiropractic care was his first choice for treating injuries and maintaining overall wellness.
+        </p>
+        <p>
+          He received his Doctorate of Chiropractic from Cleveland University – Kansas City, graduating with Cum Laude honors. After graduating, he returned home to open his practice and serve the community he grew up in.
+        </p>
+
+        <blockquote class="about-quote">
+          "We are excited to be back in our hometown and cannot wait to have the opportunity to serve you and your loved ones."
+        </blockquote>
+
+        <div class="about-highlights">
+          <div class="about-highlight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            D.C., Cum Laude — Cleveland University
+          </div>
+          <div class="about-highlight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            B.S. Kinesiology — UNLV
+          </div>
+          <div class="about-highlight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Las Vegas native
+          </div>
+          <div class="about-highlight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Newborns through seniors
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process-section" id="new-patients">
+  <div class="container">
+    <div class="process-header fade-in">
+      <p class="section-label">New Patients</p>
+      <h2 class="section-title">Your First Visit Is Simple</h2>
+      <p class="section-subtitle">We've made the process straightforward so you can focus on feeling better. Patient forms are available online so you can complete them before your visit.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step fade-in">
+        <div class="step-number">1</div>
+        <div class="process-step-body">
+          <h3>Get in Touch</h3>
+          <p>Call us at (702) 478-6388 or submit a request through our contact form. We'll find a time that works for your schedule.</p>
+        </div>
+      </div>
+
+      <div class="process-step fade-in fade-in-delay-1">
+        <div class="step-number">2</div>
+        <div class="process-step-body">
+          <h3>Your First Exam</h3>
+          <p>Dr. Hernandez will do a thorough consultation and exam. If X-rays are needed, they'll be taken in-office to help create your specific care plan.</p>
+        </div>
+      </div>
+
+      <div class="process-step fade-in fade-in-delay-2">
+        <div class="step-number">3</div>
+        <div class="process-step-body">
+          <h3>Start Your Care</h3>
+          <p>You'll receive a clear explanation of findings and a personalized treatment plan. We'll go at a pace that makes sense for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info fade-in">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Ready to Schedule?</h2>
+        <p class="section-subtitle">We're accepting new patients and usually have appointments available within the week. Call, text, or send us a message.</p>
+
+        <div class="contact-detail-list">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Address</h4>
+              <p>2829 S. Rainbow Blvd.<br>Las Vegas, NV 89146</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Phone</h4>
+              <a href="tel:7024786388">(702) 478-6388</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <a href="mailto:info@hernandezchirolv.com">info@hernandezchirolv.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Office Hours</h4>
+              <p>Mon – Thurs: 9:00 AM – 1:00 PM &amp; 3:00 PM – 6:00 PM<br>Friday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.8!2d-115.244!3d36.133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4e5c2bbb1e7%3A0x2d6edf7e2f2c2c2c!2s2829%20S%20Rainbow%20Blvd%2C%20Las%20Vegas%2C%20NV%2089146!5e0!3m2!1sen!2sus!4v1"
+            width="100%"
+            height="160"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing Hernandez Chiropractic at 2829 S. Rainbow Blvd, Las Vegas">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-card fade-in">
+        <h3>Request an Appointment</h3>
+        <p>Fill out the form below and we'll get back to you within one business day.</p>
+
+        <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(702) 555-0123" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email (optional)</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="visitReason">Reason for Visit</label>
+            <select id="visitReason" name="visitReason">
+              <option value="">Select one...</option>
+              <option value="back-pain">Back or low back pain</option>
+              <option value="neck-pain">Neck pain or stiffness</option>
+              <option value="headaches">Headaches</option>
+              <option value="auto-accident">Auto accident</option>
+              <option value="family">Family / pediatric care</option>
+              <option value="wellness">General wellness</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Anything else we should know? (optional)</label>
+            <textarea id="message" name="message" rows="3" placeholder="Tell us briefly about your concern..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Request Appointment
+            </button>
+          </div>
+
+          <p class="form-note">We'll respond within 1 business day. For urgent needs, please call <a href="tel:7024786388" style="color:var(--green-700);font-weight:600;text-decoration:underline;text-underline-offset:2px;">(702) 478-6388</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="Hernandez Chiropractic — Home">
+          <div class="logo-mark">H</div>
+          <div class="logo-text">
+            Hernandez
+            <span>Chiropractic</span>
+          </div>
+        </a>
+        <p>Family-focused chiropractic care serving the Las Vegas community. Gentle, specific adjustments for patients of all ages.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#about">About Dr. Hernandez</a>
+        <a href="#new-patients">New Patients</a>
+        <a href="#contact">Contact &amp; Schedule</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>2829 S. Rainbow Blvd.<br>Las Vegas, NV 89146</p>
+        <a href="tel:7024786388">(702) 478-6388</a>
+        <a href="mailto:info@hernandezchirolv.com">info@hernandezchirolv.com</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hernandez Chiropractic. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/hernandezchirolv" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/hernandezchirolv" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA ===== -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-inner">
+    <a href="tel:7024786388" class="sticky-cta-btn" id="sticky-call-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <a href="sms:7024786388" class="sticky-cta-btn" id="sticky-text-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Text
+    </a>
+    <a href="#contact" class="sticky-cta-btn primary" id="sticky-book-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Book Appointment
+    </a>
+  </div>
+</div>
+
+<script>
+// Header scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Mobile nav
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileNav = document.getElementById('mobileNav');
+let mobileNavOpen = false;
+
+mobileToggle.addEventListener('click', () => {
+  mobileNavOpen = !mobileNavOpen;
+  mobileNav.style.display = 'flex';
+  if (mobileNavOpen) {
+    requestAnimationFrame(() => mobileNav.classList.add('open'));
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    mobileToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+    document.body.style.overflow = 'hidden';
+  } else {
+    closeMobileNav();
+  }
+});
+
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  mobileToggle.setAttribute('aria-expanded', 'false');
+  mobileToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+  document.body.style.overflow = '';
+  mobileNavOpen = false;
+  setTimeout(() => { if (!mobileNavOpen) mobileNav.style.display = 'none'; }, 220);
+}
+
+// Scroll reveal
+const fadeEls = document.querySelectorAll('.fade-in');
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -32px 0px' });
+  fadeEls.forEach(el => observer.observe(el));
+} else {
+  fadeEls.forEach(el => el.classList.add('visible'));
+}
+
+// Form (demo)
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('form-submit-btn');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Request Sent!';
+  btn.style.background = 'var(--green-600)';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.innerHTML = orig;
+    btn.style.background = '';
+    btn.disabled = false;
+    e.target.reset();
+  }, 3000);
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const h = document.getElementById('header').offsetHeight;
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - h - 16, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
